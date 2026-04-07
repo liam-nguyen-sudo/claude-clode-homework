@@ -1,0 +1,80 @@
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100dvh;
+  padding: var(--space-xl) var(--space-md);
+  gap: var(--space-xl);
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.card {
+  width: 100%;
+  background: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+}
+
+.scoreDisplay {
+  font-size: var(--font-size-3xl);
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-primary);
+  margin-bottom: var(--space-lg);
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-md);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+}
+
+.statLabel {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+}
+
+.statValue {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+}
+
+.correct { color: var(--color-correct); }
+.incorrect { color: var(--color-incorrect); }
+.skipped { color: var(--color-timeout); }
+
+.sectionTitle {
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  width: 100%;
+}
+
+.replayButton {
+  padding: var(--space-md) var(--space-2xl);
+  background: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.replayButton:hover {
+  background: var(--color-primary-hover);
+  transform: translateY(-1px);
+}
